@@ -1,0 +1,22 @@
+{
+  "name": "ROMELL TEXTIL",
+  "short_name": "ROMELL",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "lang": "es-MX",
+  "icons": [
+    {
+      "src": "media/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "media/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

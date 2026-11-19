@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="theme-color" content="#000000">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Catálogo | ROMELL TEXTIL</title>
+  <meta name="description" content="Catálogo de telas ROMELL TEXTIL: piqué, cardigán, chiffón y felpa en más de 10 colores. Pide tu cotización por WhatsApp.">
+  <link rel="icon" href="media/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="media/apple-touch-icon.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="apple-mobile-web-app-title" content="ROMELL">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300..700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="catalogo">
+  <div id="site-header"></div>
+
+  <section class="cat-hero">
+    <img src="media/catalogo-banner.jpg" alt="Rollo de tela ROMELL TEXTIL">
+    <div class="cat-hero-copy">
+      <h1 class="display">Catálogo de <em>telas</em></h1>
+      <p>Elige un color y míralo en cada tela.</p>
+    </div>
+  </section>
+
+  <div class="cat-bar">
+    <div class="cat-bar-inner">
+      <div class="cat-types" role="group" aria-label="Tipo de tela">
+        <button class="chip is-active" type="button" data-filter-type="" aria-pressed="true">Todas</button>
+        <button class="chip" type="button" data-filter-type="pique" aria-pressed="false">Piqué</button>
+        <button class="chip" type="button" data-filter-type="cardigan" aria-pressed="false">Cardigán</button>
+        <button class="chip" type="button" data-filter-type="chiffon" aria-pressed="false">Chiffón</button>
+        <button class="chip" type="button" data-filter-type="felpa" aria-pressed="false">Felpa</button>
+      </div>
+      <div class="cat-colors" role="group" aria-label="Color">
+        <button class="swatch swatch-all is-active" type="button" data-filter-color="" aria-pressed="true" title="Todos los colores" aria-label="Todos los colores"></button>
+            <button class="swatch" type="button" data-filter-color="AZUL MARINO" aria-pressed="false" title="Azul marino" aria-label="Azul marino" style="background:#000080"></button>
+            <button class="swatch" type="button" data-filter-color="AZUL NAVY" aria-pressed="false" title="Azul navy" aria-label="Azul navy" style="background:#202A44"></button>
+            <button class="swatch" type="button" data-filter-color="NEGRO" aria-pressed="false" title="Negro" aria-label="Negro" style="background:#000"></button>
+            <button class="swatch" type="button" data-filter-color="GRIS OXFORD" aria-pressed="false" title="Gris oxford" aria-label="Gris oxford" style="background:#393D42"></button>
+            <button class="swatch" type="button" data-filter-color="GRIS MEDIO" aria-pressed="false" title="Gris medio" aria-label="Gris medio" style="background:#808080"></button>
+            <button class="swatch" type="button" data-filter-color="GRIS JASPE" aria-pressed="false" title="Gris jaspe" aria-label="Gris jaspe" style="background:#ABC1CC"></button>
+            <button class="swatch" type="button" data-filter-color="AVENA" aria-pressed="false" title="Avena" aria-label="Avena" style="background:#E0DCC8"></button>
+            <button class="swatch" type="button" data-filter-color="BLANCO ESCOLAR" aria-pressed="false" title="Blanco escolar" aria-label="Blanco escolar" style="background:#fff"></button>
+            <button class="swatch" type="button" data-filter-color="PETRÓLEO" aria-pressed="false" title="Petróleo" aria-label="Petróleo" style="background:#01454F"></button>
+            <button class="swatch" type="button" data-filter-color="VERDE MILITAR" aria-pressed="false" title="Verde militar" aria-label="Verde militar" style="background:#454D1C"></button>
+            <button class="swatch" type="button" data-filter-color="VINO" aria-pressed="false" title="Vino" aria-label="Vino" style="background:#800020"></button>
+            <button class="swatch" type="button" data-filter-color="ROJO" aria-pressed="false" title="Rojo" aria-label="Rojo" style="background:#F10707"></button>
+      </div>
+    </div>
+  </div>
+
+  <main class="catalog-page">
+    <p class="cat-status"><b id="product-count">4 telas</b> <span id="color-status">en todos los colores</span></p>
+    <div id="catalog-grid" class="product-grid"></div>
+    <div class="cat-empty" id="catalog-empty" hidden>
+      <p>Ninguna tela de este tipo viene en ese color.</p>
+      <button class="btn btn-ghost" type="button" id="catalog-reset">Ver todas las telas</button>
+    </div>
+  </main>
+
+  <section class="cta-panel cat-cta fx-streak">
+    <img src="media/telas-apiladas.jpeg" alt="" loading="lazy">
+    <div class="cta-inner">
+      <h2 class="display">¿No encuentras <em>tu color</em>?</h2>
+      <p>Cuéntanos qué necesitas y te ayudamos a encontrarlo.</p>
+      <div class="hero-actions">
+        <a class="btn btn-wa" href="https://wa.me/522211841803?text=Hola%2C%20busco%20una%20tela%20en%20un%20color%20espec%C3%ADfico.%20%C2%BFMe%20ayudan%3F" target="_blank" rel="noopener">Preguntar por WhatsApp</a>
+        <a class="btn btn-ghost" href="contacto.html">Enviar un mensaje</a>
+      </div>
+    </div>
+  </section>
+
+  <div id="site-footer"></div>
+  <script src="js/main.js"></script>
+</body>
+</html>

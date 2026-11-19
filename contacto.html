@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="theme-color" content="#000000">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Contacto | ROMELL TEXTIL</title>
+  <meta name="description" content="Contacta a ROMELL TEXTIL en San Juan Cuautlancingo, Puebla. Ventas por WhatsApp 221 184 1803 y correo ventas@romelltextil.com.">
+  <link rel="icon" href="media/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="media/apple-touch-icon.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="apple-mobile-web-app-title" content="ROMELL">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300..700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="contacto">
+  <div id="site-header"></div>
+
+  <section class="contact-page">
+    <img class="contact-bg" src="media/historia-perchero.jpeg" alt="Showroom ROMELL TEXTIL">
+    <h1 class="display contact-title">Hablemos de <em>tu próxima tela</em></h1>
+    <form class="form-card" id="contact-form" action="enviar.php" method="post">
+      <h2>Escríbenos y te cotizamos</h2>
+      <div class="form-success" id="form-success">Tu mensaje se envió a ventas@romelltextil.com. Te contactaremos pronto.</div>
+      <div class="form-error" id="form-error">No se pudo enviar el mensaje. Inténtalo de nuevo o escríbenos a ventas@romelltextil.com.</div>
+      <div class="form-grid">
+        <label class="field">Nombre
+          <input type="text" name="nombre" placeholder="Nombre">
+        </label>
+        <label class="field">Apellido
+          <input type="text" name="apellido" placeholder="Apellido">
+        </label>
+        <label class="field">Email *
+          <input type="email" name="email" placeholder="Email" required>
+        </label>
+        <label class="field">Teléfono
+          <input type="tel" name="telefono" placeholder="Teléfono">
+        </label>
+        <label class="field full">Puesto
+          <input type="text" name="puesto" placeholder="Puesto">
+        </label>
+        <label class="field full">Mensaje *
+          <textarea name="mensaje" rows="5" placeholder="Mensaje" required></textarea>
+        </label>
+      </div>
+      <input type="hidden" name="destino" value="ventas@romelltextil.com">
+      <button class="btn btn-dark" type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <div id="site-footer"></div>
+  <script src="js/main.js"></script>
+</body>
+</html>
